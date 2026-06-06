@@ -1,0 +1,53 @@
+📁 TECH & IA PREMIUM — Site Vitrine
+
+Un site statique premium, responsive, avec 3 articles longs.
+
+=== POUR OUVRIR LE SITE ===
+
+1. Va dans le dossier techia-premium
+2. Double-clique sur index.html
+3. Le site s'ouvre dans ton navigateur
+
+=== FONCTIONNALITÉS ===
+
+✓ Design sombre/clair avec bouton de切换
+✓ 3 articles longs (800-1000 mots chacun)
+✓ Catégories : IA, Développement, Actualités
+✓ Barre de recherche (Ctrl+K)
+✓ Sections likes et compteur de vues
+✓ Articles populaires (basé sur vues + likes)
+✓ Inscription newsletter
+✓ Espaces publicitaires AdSense prêts
+✓ Micro-données SEO intégrées
+✓ Sitemap XML
+✓ Responsive (mobile, tablette, desktop)
+
+=== STRUCTURE ===
+
+index.html    → Page principale (double-clique ici)
+style.css     → Tous les styles (thème sombre/clair)
+app.js        → Toute la logique + contenu des articles
+sitemap.xml   → Pour le référencement Google
+
+=== POUR METTRE EN LIGNE ===
+
+Option 1 — Vercel (gratuit) :
+1. Va sur https://vercel.com
+2. Compte avec GitHub
+3. Crée un dépôt GitHub avec ces fichiers
+4. Importe le dépôt sur Vercel → c'est en ligne
+
+Option 2 — Netlify (gratuit) :
+1. Va sur https://netlify.com
+2. Glisse-dépose le dossier techia-premium
+3. C'est en ligne instantanément
+
+=== MONÉTISATION ===
+
+AdSense :
+- Remplace les blocs "Espace publicitaire" avec ton code AdSense
+- Dans index.html, cherche "Google AdSense"
+
+Liens affiliés :
+- Ajoute tes liens Amazon dans les articles (app.js)
+- La mention légale est déjà dans le footer

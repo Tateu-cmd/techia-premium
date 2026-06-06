@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Primaires -->
+  <title>Tech &amp; IA Premium — Actualités, Outils &amp; Tutoriels 2026</title>
+  <meta name="description" content="Tech &amp; IA Premium : actualités intelligence artificielle, outils pour développeurs, tutoriels DeepSeek, comparatifs IA open source vs propriétaire.">
+  <meta name="keywords" content="IA, intelligence artificielle, DeepSeek, développement web, outils IA, tutoriel tech, actualités tech 2026">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Tech &amp; IA Premium">
+  <link rel="canonical" href="https://techia-premium.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tech &amp; IA Premium — Actualités, Outils &amp; Tutoriels 2026">
+  <meta property="og:description" content="Actualités IA, outils pour développeurs, tutoriels et analyses. Votre source d'information tech.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://techia-premium.vercel.app/">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tech &amp; IA Premium">
+  <meta name="twitter:description" content="Actualités IA, outils pour développeurs, tutoriels et analyses.">
+
+  <!-- Micro-données Article (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Tech & IA Premium",
+    "url": "https://techia-premium.vercel.app/",
+    "description": "Actualités, outils et tutoriels sur la technologie et l'intelligence artificielle."
+  }
+  </script>
+
+  <!-- Sitemap -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Préchargement police -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+    /* Flash prevent */
+    html { background: #0d0d12; color: #f1f1f6; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">
+        <span class="nav-brand-icon">⚡</span>
+        <span>Tech &amp; IA</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#articles">Articles</a>
+        <a href="#popular">Populaires</a>
+        <a href="#newsletter">Newsletter</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">☀️</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE NAV ===== -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#articles">Articles</a>
+    <a href="#popular">Populaires</a>
+    <a href="#newsletter">Newsletter</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" role="banner">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Dernières actualités tech &amp; IA
+      </div>
+      <h1>L'information <span class="highlight">tech</span> qui vous <span class="highlight">donne une longueur d'avance</span></h1>
+      <p>Actualités, tutoriels et analyses sur l'intelligence artificielle et le développement web. Chaque article est conçu pour être utile, pas pour faire du bruit.</p>
+      <div class="hero-actions">
+        <a href="#articles" class="btn btn-primary">
+          Explorer les articles ↓
+        </a>
+        <a href="#newsletter" class="btn btn-secondary">
+          📬 S'abonner
+        </a>
+      </div>
+
+      <!-- Search -->
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Rechercher un article, un sujet, un outil... (Ctrl+K)" aria-label="Rechercher">
+      </div>
+      <p style="text-align:center;margin-top:12px;font-size:13px;color:var(--text-tertiary);" id="articleCount"></p>
+    </div>
+  </section>
+
+  <!-- ===== BANNIÈRE PUBLICITAIRE ===== -->
+  <div class="container">
+    <div class="ad-placeholder">
+      📢 Google AdSense — Espace publicitaire 728×90
+    </div>
+  </div>
+
+  <!-- ===== ARTICLES SECTION ===== -->
+  <section class="section" id="articles">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">📝 Tous les articles</h2>
+          <p class="section-subtitle">Cliquez sur un article pour le lire en entier</p>
+        </div>
+        <div class="section-actions">
+          <a href="#newsletter" class="btn btn-primary btn-sm">📬 Newsletter</a>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="categories" role="tablist">
+        <button class="category-btn active" data-category="all" role="tab">Tous</button>
+        <button class="category-btn" data-category="ia" role="tab">🤖 IA Générative</button>
+        <button class="category-btn" data-category="code" role="tab">💻 Développement</button>
+        <button class="category-btn" data-category="actus" role="tab">📰 Actualités</button>
+      </div>
+
+      <!-- Loading -->
+      <div class="loading-state" id="loadingState">
+        <div class="spinner"></div>
+        <p>Chargement des articles...</p>
+      </div>
+
+      <!-- Empty -->
+      <div class="empty-state" id="emptyState" style="display:none;"></div>
+
+      <!-- Grid -->
+      <div class="articles-grid" id="articlesGrid" role="list">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+      <!-- Ad in-feed -->
+      <div class="ad-placeholder" style="margin-top:24px;">
+        📢 Google AdSense — Espace publicitaire In-Feed
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="section" id="newsletter">
+    <div class="container">
+      <div class="newsletter">
+        <div class="newsletter-icon">📬</div>
+        <h2>Restez à la pointe de la tech</h2>
+        <p>Recevez chaque semaine les articles les plus importants, directement dans votre boîte mail. Pas de spam, que du contenu de qualité.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="votre@email.com" required aria-label="Votre adresse email">
+          <button class="btn btn-primary" type="submit">S'abonner gratuitement</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BANNIÈRE PUBLICITAIRE ===== -->
+  <div class="container">
+    <div class="ad-placeholder">
+      📢 Google AdSense — Espace publicitaire 728×90
+    </div>
+  </div>
+
+  <!-- ===== POPULAR SECTION ===== -->
+  <section class="section" id="popular">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">🔥 Articles populaires</h2>
+          <p class="section-subtitle" id="popularCount"></p>
+        </div>
+      </div>
+      <div class="popular-grid" id="popularGrid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:10px;font-size:20px;font-weight:800;">
+            <span style="width:36px;height:36px;background:var(--gradient);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;color:white;flex-shrink:0;">⚡</span>
+            Tech &amp; IA Premium
+          </div>
+          <p>Votre source d'information sur la technologie et l'intelligence artificielle. Articles, tutoriels et analyses pour comprendre le futur.</p>
+          <p style="margin-top:12px;font-size:12px;color:var(--text-tertiary);">
+            📢 En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <a href="#articles">Articles</a>
+          <a href="#popular">Populaires</a>
+          <a href="#newsletter">Newsletter</a>
+        </div>
+        <div>
+          <h4>Catégories</h4>
+          <a href="#" onclick="document.querySelector('[data-category=ia]').click()">IA Générative</a>
+          <a href="#" onclick="document.querySelector('[data-category=code]').click()">Développement</a>
+          <a href="#" onclick="document.querySelector('[data-category=actus]').click()">Actualités</a>
+        </div>
+        <div>
+          <h4>Légal</h4>
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Tech &amp; IA Premium. Tous droits réservés.</span>
+        <span>Fait avec ⚡ pour la communauté tech</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== ARTICLE VIEW (MODAL) ===== -->
+  <div class="article-view" id="articleView" role="dialog" aria-modal="true">
+    <div class="article-view-overlay" id="articleViewOverlay"></div>
+    <div class="article-view-content" id="articleViewContent">
+      <!-- Rendered by JavaScript -->
+    </div>
+  </div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ===== Sitemap hidden ===== -->
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
