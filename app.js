@@ -511,9 +511,10 @@
       </div>
       <div class="article-view-body">
         ${bodyHTML}
-        <div class="ad-placeholder ad-placeholder-inline">
-          📢 Publicité AdSense — Espace réservé
+        <div style="min-height:250px;display:flex;align-items:center;justify-content:center;background:var(--bg-elevated);border-radius:12px;margin:24px 0;">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1274274105630723" data-ad-slot="XXXXXXXXX" data-ad-format="auto"></ins>
         </div>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
       <div class="article-view-footer">
         <div class="article-view-tags">${tags}</div>
